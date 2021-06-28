@@ -1,15 +1,9 @@
+## 本项目借鉴村长大大的项目，只用作cli 的demo模板使用，大家可以借鉴，请勿进行其他违法操作。
 ## Vite2项目最佳实践
-
-### 配套视频演示
-
-我专门录了一套视频演示本文所做的所有操作，喜欢看视频学习的小伙伴移步：
-[「备战2021」Vite2 + Vue3项目最佳实践](https://www.bilibili.com/video/BV1vX4y1K7bQ)
-
-制作不易，求`3连`，求`关注`
 
 ### vite2来了
 
-`Vite1`还没用上，`Vite2`已经更新了，全新插件架构，丝滑的开发体验，和`Vue3`的完美结合。 2021年第一弹，村长打算以Vite2+Vue3为主题开启大家的前端学习之旅。
+`Vite2`已经更新了，全新插件架构，丝滑的开发体验，和`Vue3`的完美结合。 
 
 ### 2021先学学vite准没错
 
@@ -22,8 +16,6 @@
 
 
 ### 创建Vite2项目
-
-闲言碎语不必说，下面我们表一表好汉`vite2`
 
 使用npm:
 
@@ -41,8 +33,6 @@ $ npm init @vitejs/app
 
 ### Vite2主要变化
 
-对我们之前项目影响较大的我已经都标记出来了：
-
 - 配置选项变化：`vue特有选项`、创建选项、css选项、jsx选项等
 - `别名行为变化`：不再要求`/`开头或结尾
 - `Vue支持`：通过 [@vitejs/plugin-vue](https://github.com/vitejs/vite/tree/main/packages/plugin-vue)插件支持
@@ -50,7 +40,6 @@ $ npm init @vitejs/app
 - HMR API变化
 - 清单格式变化
 - `插件API重新设计`
-
 
 
 #### Vue支持
@@ -61,13 +50,11 @@ Vue的整合也通过插件实现，和其他框架一视同仁：
 
 
 
-SFC定义默认使用`setup script`，语法比较激进，但更简洁，好评！
+SFC定义默认使用`setup script`语法 ！
 
 <img src="https://gitee.com/57code/picgo/raw/master/image-20210116192013356.png" style="zoom:40%;" />
 
 #### 别名定义
-
-不再需要像`vite1`一样在别名前后加上`/`，这和`webpack`项目配置可以保持一致便于移植，好评！
 
 ```js
 import path from 'path'
@@ -89,13 +76,11 @@ import HelloWorld from 'comps/HelloWorld.vue'
 ```
 
 
-
 #### 插件API重新设计
 
 `Vite2`主要变化在插件体系，这样更标准化、易扩展。`Vite2`插件API扩展自`Rollup`插件体系，因此能兼容现存的`Rollup`插件，编写的Vite插件也可以同时运行于开发和创建，好评！
 
-> 插件编写我会另开专题讨论，欢迎大家关注我。
-
+> 插件编写可以关注村长的公众号，讲解的很不错哦！！。
 
 
 ##### Vue3 Jsx支持
@@ -141,7 +126,7 @@ export default defineComponent({
 
 ##### Mock插件应用
 
-之前给大家介绍的[vite-plugin-mock](https://github.com/vbenjs/vite-plugin-mock)已经重构支持了Vite2。
+之前村长大佬给大家介绍的[vite-plugin-mock](https://github.com/vbenjs/vite-plugin-mock)已经重构支持了Vite2。
 
 
 
@@ -297,7 +282,7 @@ import "styles/index.scss";
 
 #### UI库
 
-就用我们[花果山团队](https://www.yuque.com/hugsun)自家的[element3](https://github.com/hug-sun/element3)。
+[element3](https://github.com/hug-sun/element3)。
 
 > [中文文档](https://element3-ui.com/)
 
@@ -836,13 +821,13 @@ export function useItem(isEdit, id) {
 
 ### 配套视频演示
 
-我专门录了一套视频演示本文所做的所有操作，喜欢看视频学习的小伙伴移步：
+村长大大专门录了一套视频演示本文所做的所有操作，喜欢看视频学习的小伙伴移步：
 [「备战2021」Vite2 + Vue3项目最佳实践](https://www.bilibili.com/video/BV1vX4y1K7bQ)
 
-制作不易，求`3连`，求`关注`
+记得给村长大大`3连`，和`关注`哦！
 
 
 ### 关注村长
 
-欢迎关注我的公众号「村长学前端」跟我一起学习最新前端知识。
+欢迎他的公众号「村长学前端」我们一起学习最新前端知识。
 
