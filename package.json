@@ -1,11 +1,13 @@
 {
-  "name": "vite2-in-action",
+  "name": "{{ name }}",
   "version": "0.0.0",
+  "description": "{{ description }}",
   "license": "ISC",
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite",
     "build": "vite build"
   },
+  "author": "{{ author }}",
   "dependencies": {
     "axios": "^0.21.1",
     "element3": "0.0.39",
